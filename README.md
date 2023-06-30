@@ -69,3 +69,58 @@
 `})(jQuery)` : 함수를 호출하고 있다는 뜻이다. 
 
 **함수를 선언한 것과 동시에 함수를 호출하는 것이다.** 
+
+---
+
+## 4. 선택자 
+
+* `#jquery` : id 선택자 
+
+* `.tutorial` : class 선택자
+
+* `li` : element 선택자 
+
+* `#jquery, #MYSQL` : 다중 선택자 
+
+  
+
+* `#list li:eq(2)` : 인자와 인덱스가 동일한 element를 찾아내는 선택자 
+
+* `#list li:gt(1)` : 인자보다 인덱스가 큰 element를 찾아내는 선택자 
+
+* `#list li:lt(2)` : 인자보다 인덱스가 작은 element를 찾아내는 선택자
+
+* `#list li:even` : 첫번째, 세번째.... 홀수의 인덱스 값을 가진 element에 대한 선택자 
+
+* `#list li:odd` : 두번째, 네번째 .... 짝수의 인덱스 값을 가진 element에 대한 선택자 
+
+* `#list li:first` : 첫번째 인덱스 element에 대한 선택자 
+
+* `#list li:last` : 마지막 인덱스 element에 대한 선택자 
+
+  
+
+* `[target*="BC"]` : 속성의 값에 주어진 문자열이 포함되는 element를 찾아내는 선택자 
+
+* `[target!="DEFG"]` : 속성의 값과 주어진 문자열이 일치하지 않는 element를 찾아내는 선택자 
+
+* `[target^="B"]` : 속성의 값으로 주어진 문자열이 처음 등장하는 element를 찾아내는 선택자
+
+* `[target$="H"]` : 속성의 값으로 주어진 문자열이 마지막으로 등장하는 element를 찾아내는 선택자 
+
+* `[target]` : 속성이 존재하는 element를 찾아내는 선택자 
+
+* `[ target][id]` : 속성들이 존재하는 element를 찾아내는 선택자 
+
+
+
+* `[type="text"]` : 폼 element를 선택할 때는 속성 셀렉터를 사용한다. 
+* `[type="text"]:disable` : disabled 속성의 값이 disabled인 element를 찾아내는 선택자 
+* `[type="text":enable]` : disabled속성의 값이 enable인 element를 찾아내는 선택자 
+* `input:checked` : 체크박스 중 체크가 된 element를 찾아내는 선택자 
+
+---
+
+## 5. chain
+> jQuery의 메소드들은 반환값으로 자기 자신을 반환해야 한다는 규칙을 가지고 있다.
+> 이를 이용하면 한번 선택한 대상에 대해서 연속적인 제어를 할 수 있다. 
